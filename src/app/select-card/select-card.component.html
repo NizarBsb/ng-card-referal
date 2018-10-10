@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" class="select-card-header">Select a card below and share your referral link with friends
+</mat-toolbar>
+
+<mat-radio-group class="radio-group" [(ngModel)]="favoriteSelectedCard">
+  <mat-radio-button class="example-radio-button" *ngFor="let card of cards" [value]="card.link"
+                    (change)="setReferralLink()">
+    <img src="{{card.image}}"/>
+    {{card.name}}
+    {{card.rewards}}
+    {{card.type}}
+  </mat-radio-button>
+</mat-radio-group>
+<div [hidden]="!isCardSelected" class="selected-value">Your referral link is: <a href="">{{favoriteSelectedCard}}/{{encryptedEmail}}</a>
+</div>

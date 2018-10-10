@@ -1,0 +1,20 @@
+.select-card-header {
+  margin-bottom: 5%;
+}
+
+.card-item {
+  margin-bottom: 15%;
+}
+
+.radio-group {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.radio-button {
+  margin: 5px;
+}
+
+.selected-value {
+  margin: 15px 0;
+}
